@@ -1,4 +1,5 @@
 import streamlit as st
+from actors.page import show_actors
 from genres.page import show_genres
 
 def main():
@@ -16,7 +17,7 @@ def main():
         show_genres()
 
     if menu_option == 'Atores/Atrizes':
-        st.write('Lista de Atores/Atrizes')
+        show_actors()
 
     if menu_option == 'Filmes':
         st.write('Lista de Filmes')
